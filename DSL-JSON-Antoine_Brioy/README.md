@@ -2,4 +2,4 @@
 
 DSL Json
 
-Usage externe en Python et Javascript
+Utilisation interne en Python et Javascript
