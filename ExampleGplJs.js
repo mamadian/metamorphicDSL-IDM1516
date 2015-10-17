@@ -1,0 +1,1 @@
+  var div = $({html:'<style>#myDiv{height: 50px;width: 50px;}</style>'}).appendTo("body"); 
