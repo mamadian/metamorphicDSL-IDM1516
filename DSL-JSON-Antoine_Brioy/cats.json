@@ -1,0 +1,13 @@
+{
+	"Maine Coon": {
+		"Country": "United States",
+		"Origin": "Natural",
+		"Coat": "Long"
+	},
+	"European Shorthair": {
+		"Country": "Europe",
+		"Origin": "Natural",
+		"Coat": "Short"
+	}
+
+}
