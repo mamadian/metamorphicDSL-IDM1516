@@ -1,0 +1,4 @@
+!!
+# Now,We create an object contact in YAML
+Contacts {adresse: 4 Ave Roissy, email: deco@gmail.com, nom: Dechaud, prenom: John Marc,
+  telephone: 06XXXXXXXX}
