@@ -1,6 +1,9 @@
 import org.yaml.snakeyaml.Yaml;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -15,9 +18,9 @@ public class MainApplication {
         return sc.nextLine();
     }
 
-    public static void main (String[] args) throws IOException {
+    public static void genereFichieYaml(){
         Contacts contact = new Contacts();
-        String msg = " ";
+        String msg;
 
         System.out.println("Entrez le nom du contact: ");
         msg = lireClavier();
@@ -35,13 +38,31 @@ public class MainApplication {
         msg = lireClavier();
         contact.setAdresse(msg);
 
-        System.out.println("Entrez l'email du contact: \n");
+        System.out.println("Entrez l'email du contact: ");
         msg = lireClavier();
         contact.setEmail(msg);
 
         Yaml writer = new Yaml();
-        writer.dump(contact, new FileWriter("contact.yml"));
+        try {
+            writer.dump(contact, new FileWriter("/home/john/workspace/DSL-Project/src/main/java/contact.yml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         System.out.println("Fichier YAML genere!!\n");
+    }
 
+    public static void lireFichierYaml() throws FileNotFoundException {
+        Contacts contact1 = new Contacts();
+        Yaml reader = new Yaml();
+        FileInputStream input = new FileInputStream("/home/john/workspace/DSL-Project/src/main/java/contact.yml");
+        contact1 = (Contacts) reader.load(input);
+        System.out.println(contact1.getNom() +"\n" + contact1.getPrenom() + "\n" + contact1.getAdresse() +
+                            "\n" + contact1.getTelephone() + "\n" + contact1.getEmail());
+    }
+
+
+    public static void main (String[] args) throws FileNotFoundException {
+        genereFichieYaml();
+        lireFichierYaml();
     }
 }
