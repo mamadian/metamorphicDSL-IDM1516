@@ -1,0 +1,21 @@
+PROC producer (CHAN INT out!)
+  CHAR c:
+  SEQ
+    c := "a"
+    out ! c
+    out.string("send value :", c)
+:
+
+PROC consumer (CHAN INT in?)
+  INT c:
+  SEQ
+    in ? c
+    out.string("get value :", c)
+:
+
+PROC network ()
+  CHAN INT c:
+  PAR
+    producer (c!)
+    consumer (c?)
+:
