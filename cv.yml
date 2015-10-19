@@ -1,0 +1,12 @@
+---
+# My CV in YAML
+name: VALLEE
+firstname: Hugo
+age: 23
+skill: M2 MIAGE
+employed: False
+favouriteWebsite: OpenCompare
+languages:
+    java: Pro
+    c#: Not so bad
+    YAML: Very bad
