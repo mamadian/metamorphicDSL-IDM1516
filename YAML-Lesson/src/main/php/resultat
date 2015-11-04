@@ -1,0 +1,11 @@
+---
+lesson 1:
+    name: IDM
+    nbHours: 2
+    room: i50
+    teacherAddress: mathieu.acher@inria.fr
+lesson 2:
+    name: AOC
+    nbHours: 2
+    room: i52
+    teacherAddress: noel.plouzeau@univ-rennes1.fr

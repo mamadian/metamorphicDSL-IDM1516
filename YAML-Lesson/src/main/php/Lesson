@@ -1,0 +1,83 @@
+<?php
+
+class Lesson{
+    private $name;
+    private $room;
+    private $nbHours;
+    private $teacherAddress;
+
+    function __construct($n, $r, $nb, $a){
+        $this->name = $n;
+        $this->room = $r;
+        $this->nbHours = $nb;
+        $this->teacherAddress = $a;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param mixed $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRoom()
+    {
+        return $this->room;
+    }
+
+    /**
+     * @param mixed $room
+     */
+    public function setRoom($room)
+    {
+        $this->room = $room;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNbHours()
+    {
+        return $this->nbHours;
+    }
+
+    /**
+     * @param mixed $nbHours
+     */
+    public function setNbHours($nbHours)
+    {
+        $this->nbHours = $nbHours;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTeacherAddress()
+    {
+        return $this->teacherAddress;
+    }
+
+    /**
+     * @param mixed $teacherAddress
+     */
+    public function setTeacherAddress($teacherAddress)
+    {
+        $this->teacherAddress = $teacherAddress;
+    }
+
+    public function toString(){
+        return array("name"=>$this->getName(), "nbHours"=>$this->nbHours, "room"=>$this->getRoom(), "teacherAddress"=>$this->getTeacherAddress());
+    }
+}

@@ -1,0 +1,7 @@
+Ci-joint mon travail pour le devoir maison du cours IDM par Augustin Bardou.
+Langages utilisés :
+ - Java
+ - Php
+ - Yaml
+La classe Java "Lesson" écrit le résultat dans la console et la classe Php "exec" écrit dans le fichier resultat.txt.
+Pour lancer le code php, il faut se placer dans le répertoire DM/src/main/php/ et faire php exec.php
