@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<maison>
+   <pieces>
+      <piece id="0">
+         <nom>Chambre 1</nom>
+         <type>Prive</type>
+         <proprietaire>Parents</proprietaire>
+         <surface>12</surface>
+      </piece>
+      <piece id="1">
+         <nom>Chambre 2</nom>
+         <type>Prive</type>
+         <proprietaire>Enfant 1</proprietaire>
+         <surface>10</surface>
+      </piece>
+      <piece id="2">
+         <nom>Chambre 3</nom>
+         <type>Prive</type>
+         <proprietaire>Enfant 2</proprietaire>
+         <surface>8</surface>
+      </piece>
+      <piece id="3">
+         <nom>Salon</nom>
+         <type>Commune</type>
+         <proprietaire />
+         <surface>24</surface>
+      </piece>
+      <piece id="4">
+         <nom>Cuisine</nom>
+         <type>Commune</type>
+         <proprietaire />
+         <surface>6</surface>
+      </piece>
+   </pieces>
+   <lieu>3 rue des Oubliés</lieu>
+   <proprietaire>Julien OLIVIER</proprietaire>
+   <prix>150000</prix>
+   <nombrePiece>5</nombrePiece>
+</maison>

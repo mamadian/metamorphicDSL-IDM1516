@@ -1,0 +1,4 @@
+DSL interne/externe : XML
+GPL utilisés : 
+	- Main.java	: JAVA
+	- Program.cs	: C#
